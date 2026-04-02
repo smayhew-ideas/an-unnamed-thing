@@ -74,7 +74,11 @@ export default function HomePage() {
 
             {/* Central Graphic with Fade Animation */}
             <div
-                  className={`absolute h-[490px] w-[980px] left-1/2 top-[calc(50%+15px)] -translate-x-1/2 -translate-y-1/2 transition-all duration-1000 ${...}`}                fadeIn ? "opacity-100" : "opacity-0"
+                  className={[
+          "absolute h-[490px] w-[980px] left-1/2 top-[calc(50%+15px)]",
+        "-translate-x-1/2 -translate-y-1/2 transition-all duration-1000",
+      fadeIn ? "opacity-100" : "opacity-0"
+    ].join(" ")}
               }`}
               style={{ transform: `translate(-50%, calc(-50% + ${fadeIn ? '0px' : '32px'}))` }}
             >
