@@ -9,6 +9,16 @@ export default defineConfig({
     // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
+    // Resolve Figma asset imports (figma:asset/<hash>.ext → src/assets/<hash>.ext)
+    {
+      name: 'figma-asset-resolver',
+      resolveId(id: string) {
+        if (id.startsWith('figma:asset/')) {
+          const filename = id.replace('figma:asset/', '')
+          return path.resolve(__dirname, `./src/assets/${filename}`)
+        }
+      },
+    },
   ],
   resolve: {
     alias: {
