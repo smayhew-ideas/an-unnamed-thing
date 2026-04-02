@@ -18,8 +18,8 @@ export default function HomePage() {
       <div className="relative w-full max-w-[1440px] min-h-screen lg:h-[960px] mx-auto">
         
         {/* Desktop: Exact Figma layout with absolute positioning */}
-        <div className="hidden lg:block">
-          <div className="absolute inset-[96px_80px] overflow-hidden">
+        <div className="hidden lg: block">
+          <div className="absolute inset-[96px_80px] overflow-visible">
             
             {/* Navigation Cards - Absolute positioned on right */}
             <div className="absolute left-[1004.93px] top-0 w-[195.074px]">
@@ -74,8 +74,7 @@ export default function HomePage() {
 
             {/* Central Graphic with Fade Animation */}
             <div
-              className={`absolute h-[394px] w-[783px] left-1/2 top-[calc(50%+15px)] -translate-x-1/2 -translate-y-1/2 transition-all duration-1000 ${
-                fadeIn ? "opacity-100" : "opacity-0"
+                  className={`absolute h-[490px] w-[980px] left-1/2 top-[calc(50%+15px)] -translate-x-1/2 -translate-y-1/2 transition-all duration-1000 ${...}`}                fadeIn ? "opacity-100" : "opacity-0"
               }`}
               style={{ transform: `translate(-50%, calc(-50% + ${fadeIn ? '0px' : '32px'}))` }}
             >
