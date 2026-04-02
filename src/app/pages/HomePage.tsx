@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Navigation } from "../components/Navigation";
 import svgPaths from "../../imports/svg-a0ql0raaia";
-import thesourceImg from "figma:asset/thesource.png";
+import thesourceImg from "../assets/thesource.png";
 
 export default function HomePage() {
   const [fadeIn, setFadeIn] = useState(false);
