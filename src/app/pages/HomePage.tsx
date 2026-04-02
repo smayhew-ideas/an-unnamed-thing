@@ -79,7 +79,6 @@ export default function HomePage() {
         "-translate-x-1/2 -translate-y-1/2 transition-all duration-1000",
       fadeIn ? "opacity-100" : "opacity-0"
     ].join(" ")}
-              }`}
               style={{ transform: `translate(-50%, calc(-50% + ${fadeIn ? '0px' : '32px'}))` }}
             >
               <img
