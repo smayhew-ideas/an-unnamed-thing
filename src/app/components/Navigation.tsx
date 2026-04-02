@@ -5,26 +5,25 @@ import { NavCard } from "./NavCard";
 const navItems = [
   {
     title: "THE LETTER",
-    description: "An open letter to the related AI IA thinking.",
+    description: "An open letter to the AI industry on the unaccounted input.",
     link: "/letter",
   },
   {
     title: "THE MODEL",
-    description: "A running Spiral | Toroidal structure as physical example of i/o training data (THS)",
+    description: "A toroidal model of extraction and return. The economic loop, made visible.",
     link: "/model",
   },
   {
-    title: "THE  SUBSTRATE",
-    description: "An explainer of the necessity for Identity to recognize and assign a proportionate CAPEX",
+    title: "THE SUBSTRATE",
+    description: "Human cognitive output as the unnamed raw material of AI.",
     link: "/substrate",
   },
   {
     title: "THE LAB",
-    description: "An open letter to the related AI IA thinking.",
+    description: "The developing argument. Data, precedents, and working documents.",
     link: "/lab",
   },
 ];
-
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
